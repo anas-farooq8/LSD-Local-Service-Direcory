@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="900.0" stylesheets="@../../Styles/ManageServiceProvider.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lsd.Controllers.Admin.ManageBookingsController">
+    <AnchorPane layoutX="243.0" layoutY="112.0" prefHeight="780.0" prefWidth="880.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+        <styleClass>
+            <String fx:value="white-bg" />
+            <String fx:value="shadow" />
+        </styleClass>
+    </AnchorPane>
+    <AnchorPane layoutX="20.0" layoutY="20.0" prefHeight="780.0" prefWidth="880.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+        <styleClass>
+            <String fx:value="white-bg" />
+            <String fx:value="shadow" />
+        </styleClass>
+        <TextField fx:id="search_fld" alignment="TOP_LEFT" layoutX="231.0" layoutY="14.0" prefHeight="30.0" prefWidth="860.0" promptText="Search" styleClass="search" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+            <font>
+                <Font size="14.0" />
+            </font>
+            <padding>
+                <Insets left="30.0" />
+            </padding>
+        </TextField>
+        <FontAwesomeIconView fill="#00000036" glyphName="SEARCH" layoutX="14.0" layoutY="30.0" size="16" AnchorPane.leftAnchor="20.0" />
+        <TableView fx:id="booking_tableView" layoutX="90.0" layoutY="84.0" prefHeight="450.0" prefWidth="860.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="50.0">
+            <columns>
+                <TableColumn fx:id="bookingId_column" text="Booking ID" />
+                <TableColumn fx:id="ssUsername_column" prefWidth="140.0" sortable="false" text="Service Seeker" />
+                <TableColumn fx:id="spUsername_column" prefWidth="140.0" sortable="false" text="Service Provider" />
+                <TableColumn fx:id="sType_column" prefWidth="100.0" sortable="false" text="Service Type" />
+                <TableColumn fx:id="schedule_column" prefWidth="140.0" text="Schedule Date/Time" />
+                <TableColumn fx:id="status_column" prefWidth="100.0" text="Status" />
+            <TableColumn fx:id="actions_column" prefWidth="155.0" sortable="false" text="Actions" />
+            </columns>
+        </TableView>
+    </AnchorPane>
+</AnchorPane>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="800.0" prefWidth="900.0" stylesheets="@../../Styles/ManageServiceProvider.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lsd.Controllers.Admin.ManageServiceProviderController">
+   <AnchorPane layoutX="243.0" layoutY="112.0" prefHeight="780.0" prefWidth="880.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+      <styleClass>
+         <String fx:value="white-bg" />
+         <String fx:value="shadow" />
+      </styleClass>
+      <TextField fx:id="username_fld" layoutX="352.0" layoutY="484.0" prefHeight="32.0" prefWidth="230.0">
+         <styleClass>
+            <String fx:value="textfield" />
+            <String fx:value="shadow" />
+         </styleClass>
+      </TextField>
+      <TextField fx:id="name_fld" layoutX="352.0" layoutY="533.0" prefHeight="32.0" prefWidth="230.0">
+         <styleClass>
+            <String fx:value="textfield" />
+            <String fx:value="shadow" />
+         </styleClass>
+      </TextField>
+      <DatePicker fx:id="dob_picker" layoutX="352.0" layoutY="585.0" prefHeight="32.0" prefWidth="230.0" promptText="Enter Date of Birth">
+         <styleClass>
+            <String fx:value="textfield" />
+            <String fx:value="shadow" />
+         </styleClass>
+      </DatePicker>
+      <ComboBox fx:id="gender_Cbox" layoutX="352.0" layoutY="629.0" prefHeight="32.0" prefWidth="100.0" promptText="Gender" style="-fx-cursor: hand;">
+         <styleClass>
+            <String fx:value="textfield" />
+            <String fx:value="shadow" />
+         </styleClass>
+      </ComboBox>
+      <TextField fx:id="email_fld" layoutX="352.0" layoutY="673.0" prefHeight="32.0" prefWidth="230.0">
+         <styleClass>
+            <String fx:value="textfield" />
+            <String fx:value="shadow" />
+         </styleClass>
+      </TextField>
+      <TextField disable="true" editable="false" layoutX="352.0" layoutY="717.0" style="-fx-background-color: #FFFFFF; -fx-font-size: 1.2em; -fx-pref-height: 32; -fx-pref-width: 35; -fx-border-color: #ddd; -fx-border-radius: 5;" text="+1">
+         <styleClass>
+            <String fx:value="textfield" />
+            <String fx:value="shadow" />
+         </styleClass>
+      </TextField>
+      <TextField fx:id="phone_fld" layoutX="402.0" layoutY="716.0" prefHeight="32.0" prefWidth="180.0">
+         <styleClass>
+            <String fx:value="textfield" />
+            <String fx:value="shadow" />
+         </styleClass>
+      </TextField>
+      <ListView fx:id="category_listView" editable="true" layoutX="636.0" layoutY="495.0" prefHeight="150.0" prefWidth="200.0">
+         <styleClass>
+            <String fx:value="white-bg" />
+            <String fx:value="shadow" />
+         </styleClass>
+      </ListView>
+      <Button fx:id="add_btn" layoutX="14.0" layoutY="654.0" mnemonicParsing="false" text="Add">
+         <styleClass>
+            <String fx:value="Crud-button" />
+            <String fx:value="add-btn" />
+         </styleClass>
+         <graphic>
+            <FontAwesomeIconView fill="WHITE" glyphName="USER_PLUS" />
+         </graphic>
+      </Button>
+      <Button fx:id="update_btn" disable="true" layoutX="105.0" layoutY="654.0" mnemonicParsing="false" text="Update">
+         <styleClass>
+            <String fx:value="Crud-button" />
+            <String fx:value="update-btn" />
+         </styleClass>
+         <graphic>
+            <FontAwesomeIconView fill="WHITE" glyphName="PENCIL" />
+         </graphic>
+      </Button>
+      <Button fx:id="delete_btn" disable="true" layoutX="14.0" layoutY="712.0" mnemonicParsing="false" text="Delete">
+         <styleClass>
+            <String fx:value="Crud-button" />
+            <String fx:value="delete-btn" />
+         </styleClass>
+         <graphic>
+            <FontAwesomeIconView fill="WHITE" glyphName="CLOSE" />
+         </graphic>
+      </Button>
+      <Button fx:id="clear_btn" layoutX="105.0" layoutY="712.0" mnemonicParsing="false" text="Clear">
+         <styleClass>
+            <String fx:value="Crud-button" />
+            <String fx:value="clear-btn" />
+         </styleClass>
+         <graphic>
+            <FontAwesomeIconView fill="WHITE" glyphName="REFRESH" />
+         </graphic>
+      </Button>
+      <FontAwesomeIconView fill="#117a65" glyphName="ID_BADGE" layoutX="215.0" layoutY="507.0" size="22" />
+      <Text fill="#096150" layoutX="254.0" layoutY="504.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 16;" text="Username" />
+      <FontAwesomeIconView fill="#117a65" glyphName="USER" layoutX="216.0" layoutY="556.0" size="22" />
+      <Text fill="#096150" layoutX="254.0" layoutY="553.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 16;" text="Name" />
+      <FontAwesomeIconView fill="#117a65" glyphName="BIRTHDAY_CAKE" layoutX="216.0" layoutY="606.0" size="22" />
+      <Text fill="#096150" layoutX="251.0" layoutY="605.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 16;" text="Date of Birth" />
+      <FontAwesomeIconView fill="#117a65" glyphName="CHILD" layoutX="217.0" layoutY="651.0" size="22" />
+      <Text fill="#096150" layoutX="252.0" layoutY="649.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 16;" text="Gender" />
+      <FontAwesomeIconView fill="#117a65" glyphName="ENVELOPE" layoutX="215.0" layoutY="696.0" size="22" />
+      <Text fill="#096150" layoutX="253.0" layoutY="693.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 16;" text="Email" />
+      <FontAwesomeIconView fill="#117a65" glyphName="PHONE" layoutX="216.0" layoutY="742.0" size="22" />
+      <Text fill="#096150" layoutX="254.0" layoutY="739.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 16;" text="Phone" />
+      <Line endX="100.0" layoutX="200.0" layoutY="614.0" rotate="90.0" startX="-100.0" stroke="#096150" />
+      <AnchorPane layoutX="22.0" layoutY="466.0" prefHeight="150.0" prefWidth="140.0" stylesheets="@../../Styles/ManageServiceProvider.css">
+         <styleClass>
+            <String fx:value="white-bg" />
+            <String fx:value="shadow" />
+         </styleClass>
+         <ImageView fx:id="profile_imageView" fitHeight="140.0" fitWidth="141.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0" />
+      </AnchorPane>
+      <Button fx:id="camera_btn" layoutX="77.0" layoutY="617.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="40.0" styleClass="camera-button">
+         <graphic>
+            <FontAwesomeIconView fill="WHITE" glyphName="CAMERA" size="14" />
+         </graphic>
+      </Button>
+      <FontAwesomeIconView fill="#117a65" glyphName="BARS" layoutX="669.0" layoutY="485.0" size="22" />
+      <Text fill="#096150" layoutX="704.0" layoutY="484.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 16;" text="Categories" />
+      <Line endX="100.0" layoutX="609.0" layoutY="617.0" rotate="90.0" startX="-100.0" stroke="#096150" />
+      <TextField fx:id="zipCode_fld" layoutX="752.0" layoutY="659.0" prefHeight="32.0" prefWidth="100.0">
+         <styleClass>
+            <String fx:value="textfield" />
+            <String fx:value="shadow" />
+         </styleClass>
+      </TextField>
+      <FontAwesomeIconView fill="#117a65" glyphName="LOCATION_ARROW" layoutX="640.0" layoutY="686.0" size="22" />
+      <Text fill="#096150" layoutX="677.0" layoutY="683.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 16;" text="Zip Code" />
+      <ComboBox fx:id="availability_cBox" layoutX="737.0" layoutY="703.0" prefHeight="32.0" prefWidth="115.0" promptText="Choose" style="-fx-cursor: hand;">
+         <styleClass>
+            <String fx:value="textfield" />
+            <String fx:value="shadow" />
+         </styleClass>
+      </ComboBox>
+      <FontAwesomeIconView fx:id="availability_icon" fill="#117a65" glyphName="TOGGLE_OFF" layoutX="641.0" layoutY="726.0" size="22" />
+      <Text fill="#096150" layoutX="679.0" layoutY="724.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 16;" text="Status" />
+   </AnchorPane>
+   <AnchorPane layoutX="20.0" layoutY="20.0" prefHeight="450.0" prefWidth="900.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+      <styleClass>
+         <String fx:value="white-bg" />
+         <String fx:value="shadow" />
+      </styleClass>
+      <TextField fx:id="search_fld" alignment="TOP_LEFT" layoutX="231.0" layoutY="14.0" prefHeight="30.0" prefWidth="860.0" promptText="Search by Name" styleClass="search" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <padding>
+            <Insets left="30.0" />
+         </padding>
+      </TextField>
+      <FontAwesomeIconView fill="#00000036" glyphName="SEARCH" layoutX="14.0" layoutY="30.0" size="16" AnchorPane.leftAnchor="20.0" />
+      <TableView fx:id="serviceProvider_tableView" layoutX="90.0" layoutY="84.0" prefHeight="450.0" prefWidth="860.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="50.0">
+         <columns>
+            <TableColumn fx:id="username_column" prefWidth="105.0" sortable="false" text="UserName" />
+            <TableColumn fx:id="name_column" prefWidth="120.0" sortable="false" text="Name" />
+            <TableColumn fx:id="age_column" prefWidth="35.0" text="Age" />
+            <TableColumn fx:id="gender_column" prefWidth="55.0" text="Gender" />
+            <TableColumn fx:id="email_column" prefWidth="180.0" sortable="false" text="Email" />
+            <TableColumn fx:id="phone_column" sortable="false" text="Phone No." />
+            <TableColumn fx:id="rating_column" prefWidth="45.0" text="Rating" />
+            <TableColumn fx:id="zipCode_column" prefWidth="60.0" sortable="false" text="Zip Code" />
+            <TableColumn fx:id="status_column" text="Status" />
+            <TableColumn fx:id="category_column" prefWidth="250.0" text="Categories" />
+         </columns>
+      </TableView>
+   </AnchorPane>
+</AnchorPane>

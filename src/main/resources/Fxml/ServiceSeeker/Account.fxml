@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="800.0" prefWidth="900.0" stylesheets="@../../Styles/ManageServiceProvider.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lsd.Controllers.ServiceSeeker.AccountController">
+   <children>
+      <AnchorPane layoutX="358.0" layoutY="219.0" prefHeight="800.0" prefWidth="900.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <styleClass>
+            <String fx:value="white-bg" />
+            <String fx:value="shadow" />
+         </styleClass>
+         <children>
+            <AnchorPane prefHeight="50.0" prefWidth="860.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+               <styleClass>
+                  <String fx:value="shadow" />
+                  <String fx:value="white-bg" />
+                  <String fx:value="top-bar" />
+               </styleClass>
+               <children>
+                  <Text fill="WHITE" layoutX="389.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="profile_label" text="Account">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Text>
+                  <Line layoutX="374.0" layoutY="25.0" rotate="90.0" startX="20.0" stroke="WHITE" strokeWidth="4.0" />
+               </children>
+            </AnchorPane>
+            <Separator layoutX="10.0" layoutY="65.0" prefHeight="6.0" prefWidth="860.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+            <StackPane prefHeight="320.0" prefWidth="860.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="75.0">
+               <children>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: linear-gradient(to bottom right, #00D6FF, #00D62F);">
+                     <children>
+                        <ImageView fitHeight="290.0" fitWidth="492.0" layoutX="186.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../Images/CreditCard.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="70.0" fitWidth="70.0" layoutX="577.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../Images/SnapFunds.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="name" layoutX="216.0" layoutY="247.0" text="Account Title" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="cardExpiryDate" layoutX="511.0" layoutY="247.0" text="Nov/29" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="cardAccNo" layoutX="264.0" layoutY="164.0" text="1234     5678     9012     3456" textFill="WHITE">
+                           <font>
+                              <Font size="26.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="381.0" layoutY="29.0" text="SnapFunds" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <FontAwesomeIconView fill="WHITE" glyphName="ARROW_LEFT" layoutX="228.0" layoutY="192.0" size="24" />
+                        <Label layoutX="563.0" layoutY="89.0" text="Islamic Banking" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <FontAwesomeIconView fill="WHITE" glyphName="WIFI" layoutX="276.0" layoutY="112.0" rotate="90.0" size="50" />
+                        <Circle fill="DODGERBLUE" layoutX="611.0" layoutY="262.0" opacity="0.8" radius="24.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fill="#4721ff" layoutX="635.0" layoutY="262.0" opacity="0.4" radius="24.0" stroke="BLACK" strokeType="INSIDE" />
+                     </children>
+                  </AnchorPane>
+               </children>
+               <styleClass>
+                  <String fx:value="white-bg" />
+                  <String fx:value="shadow" />
+               </styleClass>
+            </StackPane>
+            <Separator layoutX="20.0" layoutY="400.0" prefHeight="6.0" prefWidth="860.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+            <AnchorPane layoutX="10.0" layoutY="412.0" prefHeight="360.0" prefWidth="860.0" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="412.0">
+               <styleClass>
+                  <String fx:value="shadow" />
+                  <String fx:value="white-bg" />
+               </styleClass>
+               <children>
+                  <Text fill="#096150" layoutX="358.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20;" text="Credit Card Info.">
+                     <font>
+                        <Font />
+                     </font>
+                  </Text>
+                  <FontAwesomeIconView fill="#117a65" glyphName="LIST" layoutX="26.0" layoutY="83.0" size="24" />
+                  <Text fill="#096150" layoutX="68.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20;" text="Account No.">
+                     <font>
+                        <Font />
+                     </font>
+                  </Text>
+                  <TextField fx:id="accNo" editable="false" focusTraversable="false" layoutX="257.0" layoutY="60.0" prefHeight="30.0" prefWidth="180.0">
+                     <styleClass>
+                        <String fx:value="textfield" />
+                        <String fx:value="shadow" />
+                     </styleClass>
+                  </TextField>
+                  <FontAwesomeIconView fill="#117a65" glyphName="ID_CARD_ALT" layoutX="26.0" layoutY="138.0" size="24" />
+                  <Text fill="#096150" layoutX="68.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20;" text="CNIC">
+                     <font>
+                        <Font />
+                     </font>
+                  </Text>
+                  <TextField fx:id="cnic" editable="false" focusTraversable="false" layoutX="257.0" layoutY="116.0" prefHeight="30.0" prefWidth="180.0">
+                     <styleClass>
+                        <String fx:value="textfield" />
+                        <String fx:value="shadow" />
+                     </styleClass>
+                  </TextField>
+                  <FontAwesomeIconView fill="#117a65" glyphName="CREDIT_CARD_ALT" layoutX="26.0" layoutY="196.0" size="24" />
+                  <Text fill="#096150" layoutX="68.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20;" text="Credit Card No.">
+                     <font>
+                        <Font />
+                     </font>
+                  </Text>
+                  <TextField fx:id="cardNo" editable="false" focusTraversable="false" layoutX="257.0" layoutY="173.0" prefHeight="30.0" prefWidth="180.0">
+                     <styleClass>
+                        <String fx:value="textfield" />
+                        <String fx:value="shadow" />
+                     </styleClass>
+                  </TextField>
+                  <FontAwesomeIconView fill="#117a65" glyphName="CALENDAR" layoutX="30.0" layoutY="256.0" size="24" />
+                  <Text fill="#096150" layoutX="68.0" layoutY="255.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20;" text="Expiry Date">
+                     <font>
+                        <Font />
+                     </font>
+                  </Text>
+                  <TextField fx:id="expiryDate" editable="false" focusTraversable="false" layoutX="257.0" layoutY="233.0" prefHeight="30.0" prefWidth="180.0">
+                     <styleClass>
+                        <String fx:value="textfield" />
+                        <String fx:value="shadow" />
+                     </styleClass>
+                  </TextField>
+                  <FontAwesomeIconView fill="#117a65" glyphName="BARS" layoutX="30.0" layoutY="311.0" size="24" />
+                  <Text fill="#096150" layoutX="68.0" layoutY="313.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20;" text="CVV">
+                     <font>
+                        <Font />
+                     </font>
+                  </Text>
+                  <TextField fx:id="cvv" editable="false" focusTraversable="false" layoutX="257.0" layoutY="290.0" prefHeight="30.0" prefWidth="180.0">
+                     <styleClass>
+                        <String fx:value="textfield" />
+                        <String fx:value="shadow" />
+                     </styleClass>
+                  </TextField>
+                  <FontAwesomeIconView fill="#117a65" glyphName="MONEY" layoutX="502.0" layoutY="83.0" size="24" />
+                  <Text fill="#096150" layoutX="544.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20;" text="Balance">
+                     <font>
+                        <Font />
+                     </font>
+                  </Text>
+                  <TextField fx:id="balance" editable="false" focusTraversable="false" layoutX="648.0" layoutY="58.0" prefHeight="30.0" prefWidth="116.0">
+                     <styleClass>
+                        <String fx:value="textfield" />
+                        <String fx:value="shadow" />
+                     </styleClass>
+                  </TextField>
+                  <FontAwesomeIconView fill="#117a65" glyphName="CODE" layoutX="502.0" layoutY="137.0" size="24" />
+                  <Text fill="#096150" layoutX="546.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20;" text="Pin">
+                     <font>
+                        <Font />
+                     </font>
+                  </Text>
+                  <TextField fx:id="pin" editable="false" focusTraversable="false" layoutX="648.0" layoutY="114.0" prefHeight="30.0" prefWidth="116.0">
+                     <styleClass>
+                        <String fx:value="textfield" />
+                        <String fx:value="shadow" />
+                     </styleClass>
+                  </TextField>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

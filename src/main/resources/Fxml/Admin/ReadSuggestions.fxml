@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="800.0" prefWidth="900.0" stylesheets="@../../Styles/ManageServiceProvider.css"
+            xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.lsd.Controllers.Admin.ReadSuggestionsController">
+   <AnchorPane prefHeight="800.0" prefWidth="900.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0"
+               AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+      <styleClass>
+         <String fx:value="shadow"/>
+         <String fx:value="white-bg"/>
+      </styleClass>
+      <AnchorPane prefHeight="50.0" prefWidth="860.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0"
+                  AnchorPane.topAnchor="10.0">
+         <styleClass>
+            <String fx:value="shadow"/>
+            <String fx:value="white-bg"/>
+            <String fx:value="top-bar"/>
+         </styleClass>
+         <Text fill="WHITE" layoutX="389.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0"
+               styleClass="profile_label" text="Suggestions">
+            <font>
+               <Font size="22.0"/>
+            </font>
+         </Text>
+         <Line layoutX="374.0" layoutY="25.0" rotate="90.0" startX="20.0" stroke="WHITE" strokeWidth="4.0"/>
+      </AnchorPane>
+      <Separator layoutX="10.0" layoutY="66.0" prefHeight="6.0" prefWidth="860.0" AnchorPane.leftAnchor="10.0"
+                 AnchorPane.rightAnchor="10.0"/>
+      <AnchorPane layoutX="81.0" layoutY="76.0" prefHeight="694.0" prefWidth="860.0" AnchorPane.bottomAnchor="10.0"
+                  AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="76.0">
+         <styleClass>
+            <String fx:value="shadow"/>
+            <String fx:value="white-bg"/>
+         </styleClass>
+         <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="50.0" prefWidth="840.0"
+                     style="-fx-border-color: linear-gradient(to bottom right, #00D6FF, #00D62F);"
+                     AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="5.0">
+            <styleClass>
+               <String fx:value="shadow"/>
+               <String fx:value="white-bg"/>
+            </styleClass>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="14.0"
+                   style="-fx-font-size: 1.2em; -fx-font-weight: bold;" text="ID" textFill="#096150"/>
+            <Label layoutX="108.0" layoutY="12.0" text="Seeker" textFill="#096150">
+               <font>
+                  <Font size="16.0"/>
+               </font>
+            </Label>
+            <Label layoutX="385.0" layoutY="12.0" text="Comment" textFill="#096150">
+               <font>
+                  <Font size="16.0"/>
+               </font>
+            </Label>
+            <Label layoutX="711.0" layoutY="13.0" text="Date Added" textFill="#096150">
+               <font>
+                  <Font size="16.0"/>
+               </font>
+            </Label>
+         </AnchorPane>
+         <ScrollPane layoutX="182.0" layoutY="64.0" prefHeight="630.0" prefWidth="860.0"
+                     AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                     AnchorPane.topAnchor="64.0">
+            <styleClass>
+               <String fx:value="shadow"/>
+               <String fx:value="white-bg"/>
+            </styleClass>
+            <GridPane fx:id="suggestionGridPane">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+               </rowConstraints>
+            </GridPane>
+         </ScrollPane>
+      </AnchorPane>
+   </AnchorPane>
+</AnchorPane>

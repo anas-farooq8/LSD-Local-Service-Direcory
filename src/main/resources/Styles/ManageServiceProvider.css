@@ -1,0 +1,220 @@
+.white-bg {
+-fx-background-color: linear-gradient(to bottom right, #00D6FF, #00D62F);
+    -fx-background-color: #eee;
+    -fx-background-radius: 8px;
+}
+
+.shadow {
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.4), 6, 0, 0, 0);
+}
+
+.top-bar {
+    -fx-background-color: linear-gradient(to bottom right, #00D6FF, #00D62F);
+}
+
+.charts {
+    -fx-border-color: linear-gradient(to bottom right, #00D6FF, #00D62F);
+    -fx-border-radius: 8px;
+    -fx-cursor: hand;
+}
+
+.charts:hover{
+    -fx-effect: dropshadow(three-pass-box, #DDDDDD, 10, 0, 0, 12);
+}
+
+
+.elevate {
+    -fx-border-color: linear-gradient(to bottom right, #00D6FF, #00D62F);
+    -fx-border-radius: 8px;
+    -fx-cursor: hand;
+}
+
+.elevate:hover{
+    -fx-effect: dropshadow(three-pass-box, #DDDDDD, 5, 0, 0, 6);
+    -fx-background-color: linear-gradient(to bottom right, #00D6FF, #00D62F);
+    -fx-opacity: 0.6;
+}
+
+.search {
+    -fx-background-color: transparent;
+    -fx-border-color: linear-gradient(to bottom right, #00D6FF, #00D62F);
+    -fx-border-radius: 8px;
+    -fx-border-width: 0.8px;
+    -fx-alignment:  center-left;
+    -fx-font-family: "Tahoma";
+}
+
+.search:focused {
+    -fx-border-width: 1.8px;
+}
+
+.table-view {
+    -fx-background-color: transparent;
+    -fx-padding: 0px;
+    -fx-border-color: linear-gradient(to bottom right, #00D6FF, #00D62F);
+    -fx-border-radius: 8px;
+    -fx-border-width: 2px;
+    -fx-cursor: hand;
+}
+
+.table-view .table-column {
+    -fx-alignment: center;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: linear-gradient(to bottom right, #00D6FF, #00D62F);
+    -fx-background-radius: 8px 8px 0px 0px;
+    -fx-background-inset: 0 0 0 0;
+}
+
+.table-view .column-header, .filter {
+    -fx-background-color: transparent;
+    -fx-size: 40px;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: #fff;
+    -fx-font-family: "Arial";
+}
+
+.textfield {
+    -fx-background-color:  #FFFFFF;
+    -fx-font-size:  1.2em;
+    -fx-font-family: "Tahoma";
+    -fx-border-radius: 5;
+}
+
+.textfield:focused {
+    -fx-border-color: linear-gradient(to bottom right, #00D6FF, #00D62F);
+    -fx-border-width: 1px;
+}
+
+.camera-button {
+    -fx-background-color: #117A65;
+    -fx-pref-width: 40;
+    -fx-pref-height: 20;
+    -fx-background-radius: 30;
+    -fx-alignment: center;
+    -fx-effect: dropshadow(three-pass-box, #DDDDDD, 5, 0, 0, 6);
+}
+
+.extra-button {
+    -fx-background-color: #fff;
+    -fx-pref-width: 55;
+    -fx-pref-height: 20;
+    -fx-background-radius: 30;
+    -fx-alignment: center;
+    -fx-effect: dropshadow(three-pass-box, #DDDDDD, 5, 0, 0, 6);
+}
+
+.extra-button:hover {
+    -fx-background-color: linear-gradient(to top right, #00D6FF, #00D62F);
+}
+
+.camera-button:hover {
+    -fx-background-color: linear-gradient(to top right, #00D6FF, #00D62F);
+}
+
+.button:hover {
+    -fx-cursor: hand;
+}
+
+.Crud-button {
+    -fx-pref-width: 80;
+    -fx-pref-height: 40;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 14px;
+    -fx-font-family: "Arial";
+    -fx-alignment: center;
+    -fx-background-radius: 8px;
+    -fx-effect: dropshadow(three-pass-box, #DDDDDD, 5, 0, 0, 6);
+}
+
+.add-btn {
+    -fx-background-color: #2d5278;
+}
+
+.add-btn:hover{
+    -fx-background-color: #2268ae;
+}
+
+.update-btn {
+    -fx-background-color: #2d7755;
+}
+
+.update-btn:hover{
+    -fx-background-color: #22ad72;
+}
+
+.delete-btn {
+    -fx-background-color: #90242f;
+}
+
+.delete-btn:hover{
+    -fx-background-color: #c51f32;
+}
+
+.clear-btn {
+    -fx-background-color: #6e2275;
+}
+
+.clear-btn:hover{
+    -fx-background-color: #ae21ac;
+}
+
+
+.card-btn {
+    -fx-pref-width: 80;
+    -fx-pref-height: 30;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 14px;
+    -fx-font-family: "Arial";
+    -fx-alignment: center;
+    -fx-background-radius: 8px;
+}
+
+
+.view-btn {
+    -fx-background-color: #2d7755;
+}
+
+.view-btn:hover{
+    -fx-background-color: #22ad72;
+}
+
+.hire-btn {
+    -fx-background-color: #2d5278;
+}
+
+.hire-btn:hover{
+    -fx-background-color: #2268ae;
+}
+
+.back-btn{
+    -fx-cursor: hand;
+}
+
+.rating-button {
+    -fx-padding: 10px 20px;
+    -fx-font-size: 14px;
+    -fx-text-fill: white;
+    -fx-background-radius: 15px; /* Rounded corners */
+    -fx-border-radius: 15px; /* Rounded border */
+    -fx-cursor: hand; /* Hand cursor on hover */
+}
+
+.change-button {
+    -fx-background-color: #027148;
+}
+
+.change-button:hover {
+    -fx-background-color: #004000;
+}
+
+.cancel-button {
+    -fx-background-color: #d9534f;
+}
+
+.cancel-button:hover {
+    -fx-background-color: #c9302c;
+}

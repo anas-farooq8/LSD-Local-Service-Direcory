@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="800.0" prefWidth="900.0" stylesheets="@../../Styles/ManageServiceProvider.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lsd.Controllers.ServiceSeeker.HomeController">
+   <AnchorPane fx:id="homeAnchor" prefHeight="800.0" prefWidth="900.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <AnchorPane prefHeight="55.0" prefWidth="200.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+         <styleClass>
+            <String fx:value="shadow" />
+            <String fx:value="white-bg" />
+            <String fx:value="top-bar" />
+         </styleClass>
+         <Text fill="WHITE" layoutX="241.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="profile_label" text="Service Providers by PROXIMITY CONNECT">
+            <font>
+               <Font size="22.0" />
+            </font>
+         </Text>
+         <Line layoutX="226.0" layoutY="28.0" rotate="90.0" startX="20.0" stroke="WHITE" strokeWidth="4.0" />
+      </AnchorPane>
+      <Separator layoutX="10.0" layoutY="67.0" prefHeight="7.0" prefWidth="880.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+      <AnchorPane layoutY="79.0" prefHeight="235.0" prefWidth="880.0" style="-fx-background-color: #EEEEEE;" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="80.0">
+         <ScrollPane layoutX="126.0" prefHeight="220.0" prefWidth="880.0" style="-fx-background-color: #FFFFFF;" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <styleClass>
+               <String fx:value="shadow" />
+               <String fx:value="white-bg" />
+            </styleClass>
+            <GridPane fx:id="categoryGridPane" prefWidth="200.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+         </ScrollPane>
+         <Separator layoutX="237.0" layoutY="12.0" orientation="VERTICAL" prefHeight="200.0" AnchorPane.rightAnchor="5.0" />
+      </AnchorPane>
+      <AnchorPane layoutX="207.0" layoutY="313.0" prefHeight="477.0" prefWidth="880.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="313.0">
+         <styleClass>
+            <String fx:value="shadow" />
+            <String fx:value="white-bg" />
+         </styleClass>
+         <TextField fx:id="search_fld" alignment="TOP_LEFT" prefHeight="30.0" prefWidth="860.0" promptText="Search" styleClass="search" AnchorPane.leftAnchor="700.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+            <font>
+               <Font size="14.0" />
+            </font>
+            <padding>
+               <Insets left="30.0" />
+            </padding>
+         </TextField>
+         <FontAwesomeIconView fill="#00000036" glyphName="SEARCH" layoutX="708.0" layoutY="24.714285850524902" size="16" AnchorPane.leftAnchor="708.0" AnchorPane.rightAnchor="157.1428575515747" AnchorPane.topAnchor="11.0" />
+         <ScrollPane layoutX="168.0" layoutY="39.0" prefHeight="438.0" prefWidth="880.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="39.0">
+            <styleClass>
+               <String fx:value="shadow" />
+               <String fx:value="white-bg" />
+            </styleClass>
+            <GridPane fx:id="serviceProviderGridPane">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+         </ScrollPane>
+      </AnchorPane>
+      <Separator layoutX="10.0" layoutY="304.0" prefHeight="7.0" prefWidth="880.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+   </AnchorPane>
+
+   <AnchorPane fx:id="bookingAnchor" prefHeight="800.0" prefWidth="900.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <AnchorPane prefHeight="55.0" prefWidth="200.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+         <styleClass>
+            <String fx:value="shadow" />
+            <String fx:value="white-bg" />
+            <String fx:value="top-bar" />
+         </styleClass>
+         <Text fill="WHITE" layoutX="372.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="profile_label" text="Booking Menu">
+            <font>
+               <Font size="22.0" />
+            </font>
+         </Text>
+         <Line layoutX="357.0" layoutY="28.0" rotate="90.0" startX="20.0" stroke="WHITE" strokeWidth="4.0" />
+         <FontAwesomeIconView fx:id="backIcon" glyphName="ARROW_LEFT" layoutX="21.0" layoutY="35.0" opacity="0.8" size="24" styleClass="back-btn" wrappingWidth="34.571428298950195" />
+      </AnchorPane>
+      <Separator layoutX="10.0" layoutY="66.0" prefHeight="7.0" prefWidth="880.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+      <AnchorPane layoutX="10.0" layoutY="76.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+         <children>
+      
+               <!-- Date Picker for Selecting the Date -->
+            <DatePicker fx:id="datePicker" layoutX="29.0" layoutY="45.0" promptText="Select Date" style="-fx-cursor: hand;">
+               <styleClass>
+                  <String fx:value="textfield" />
+                  <String fx:value="shadow" />
+               </styleClass>
+            </DatePicker>
+      
+               <!-- ComboBox for Time Slots -->
+            <ComboBox fx:id="timeSlotComboBox" layoutX="29.0" layoutY="100.0" promptText="Select Time Slot" style="-fx-cursor: hand;">
+               <styleClass>
+                  <String fx:value="textfield" />
+                  <String fx:value="shadow" />
+               </styleClass>
+            </ComboBox>
+            <Text fill="#096150" layoutX="385.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20;" text="Username" />
+            <FontAwesomeIconView fill="#117a65" glyphName="ID_BADGE" layoutX="347.0" layoutY="55.0" size="26" />
+            <TextField fx:id="provider_username" editable="false" focusTraversable="false" layoutX="496.0" layoutY="30.0" prefHeight="30.0" prefWidth="175.0">
+               <styleClass>
+                  <String fx:value="textfield" />
+                  <String fx:value="shadow" />
+               </styleClass>
+            </TextField>
+            <AnchorPane layoutX="704.0" layoutY="25.0" prefHeight="150.0" prefWidth="140.0" stylesheets="@../../Styles/ManageServiceProvider.css">
+               <styleClass>
+                  <String fx:value="white-bg" />
+                  <String fx:value="shadow" />
+               </styleClass>
+               <children>
+                  <ImageView fx:id="provider_imageView" fitHeight="140.0" fitWidth="141.0" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0" />
+               </children>
+            </AnchorPane>
+            <Text fill="#096150" layoutX="383.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 19;" text="Service Type" />
+            <FontAwesomeIconView fill="#117a65" glyphName="BRIEFCASE" layoutX="344.0" layoutY="109.0" size="26" />
+            <ComboBox fx:id="serviceType" layoutX="497.0" layoutY="86.0" prefWidth="150.0" style="-fx-cursor: hand;">
+               <styleClass>
+                  <String fx:value="textfield" />
+                  <String fx:value="shadow" />
+               </styleClass>
+            </ComboBox>
+            <Text fill="#096150" layoutX="385.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 19;" text="Total" />
+            <FontAwesomeIconView fill="#117a65" glyphName="MONEY" layoutX="345.0" layoutY="161.0" size="26" />
+            <Label fx:id="categoryPrice" layoutX="497.0" layoutY="137.0" text="\$ " textFill="#096150">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+         <styleClass>
+            <String fx:value="shadow" />
+            <String fx:value="white-bg" />
+         </styleClass>
+      </AnchorPane>
+      <StackPane layoutX="145.0" layoutY="289.0" prefHeight="290.0" prefWidth="610.0" style="-fx-alignment: center;" AnchorPane.leftAnchor="145.0" AnchorPane.rightAnchor="145.0">
+         <styleClass>
+            <String fx:value="shadow" />
+            <String fx:value="white-bg" />
+         </styleClass>
+         <children>
+            <ImageView fx:id="booking_image" fitHeight="280.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true" />
+            <Button fx:id="importImage_btn" opacity="0.8" prefWidth="105.0" style="-fx-pref-width: 105;" text="Import Now">
+               <styleClass>
+                  <String fx:value="Crud-button" />
+                  <String fx:value="update-btn" />
+               </styleClass>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="PLUS" />
+               </graphic>
+            </Button>
+         </children>
+      </StackPane>
+      <AnchorPane layoutX="101.0" layoutY="568.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+         <children>
+            <Text fill="#096150" layoutX="351.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Booking Description">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <TextArea fx:id="description" layoutX="107.0" layoutY="48.0" prefHeight="89.0" prefWidth="680.0" style="-fx-font-size: 1.3em;">
+               <styleClass>
+                  <String fx:value="textfield" />
+                  <String fx:value="shadow" />
+               </styleClass>
+            </TextArea>
+      
+                     <!-- Booking Button -->
+            <Button fx:id="book_btn" layoutX="754.0" layoutY="151.0" prefWidth="105.0" style="-fx-pref-width: 105;" text="Book Now">
+               <styleClass>
+                  <String fx:value="Crud-button" />
+                  <String fx:value="add-btn" />
+               </styleClass>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="PLUS" />
+               </graphic>
+            </Button>
+         </children>
+         <styleClass>
+            <String fx:value="shadow" />
+            <String fx:value="white-bg" />
+         </styleClass>
+      </AnchorPane>
+   </AnchorPane>
+</AnchorPane>

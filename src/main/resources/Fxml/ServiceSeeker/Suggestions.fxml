@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+
+<VBox alignment="CENTER" prefHeight="360.0" prefWidth="520.0" spacing="10.0"
+      stylesheets="@../../Styles/ChangePassword.css" xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml/1">
+    <Label alignment="CENTER" prefHeight="39.0" prefWidth="188.0" styleClass="header-label" text="Add Suggestions">
+        <VBox.margin>
+            <Insets/>
+        </VBox.margin>
+    </Label>
+    <Line endX="520.0" stroke="#096150">
+        <VBox.margin>
+            <Insets/>
+        </VBox.margin>
+    </Line>
+    <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-alignment: center;">
+        <Label alignment="CENTER" prefHeight="55.0" prefWidth="201.0" styleClass="header-label"
+               text="Add the Comment"/>
+        <TextArea fx:id="comment" prefHeight="120.0" prefWidth="521.0">
+            <styleClass>
+                <String fx:value="shadow"/>
+                <String fx:value="white-bg"/>
+                <String fx:value="text-field"/>
+            </styleClass>
+            <VBox.margin>
+                <Insets left="20.0" right="20.0"/>
+            </VBox.margin>
+        </TextArea>
+    </VBox>
+    <HBox alignment="CENTER" prefWidth="520.0" spacing="10">
+        <VBox.margin>
+            <Insets left="230.0"/>
+        </VBox.margin>
+        <Button fx:id="cancel_btn" styleClass="cancel-button" text="Cancel"/>
+        <Button fx:id="saveSuggestion_btn" maxWidth="155.0" prefHeight="40.0" prefWidth="119.0"
+                styleClass="change-button" text="Submit">
+            <HBox.margin>
+                <Insets/>
+            </HBox.margin>
+        </Button>
+    </HBox>
+</VBox>

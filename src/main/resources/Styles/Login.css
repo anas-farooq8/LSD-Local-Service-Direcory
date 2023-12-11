@@ -1,0 +1,123 @@
+.left_container {
+    /*-fx-background-color:  #00D6FF;*/
+    -fx-background-color: linear-gradient(to bottom right, #00D6FF, #00D62F);
+    -fx-opacity: 0.8;
+}
+
+.left_container Text {
+    -fx-font-family: -fx-font-family;
+    -fx-fill:  #FFFFFF;
+    -fx-font-size:  1.8em;
+}
+
+.right_container{
+    -fx-alignment:  top_center;
+    -fx-spacing: 5;
+}
+
+.right_container_label {
+    -fx-alignment:  center;
+    -fx-font-size:  1.5em;
+    -fx-font-weight: bold;
+}
+
+.right_container_username_fld_box {
+    -fx-alignment: center_left;
+    -fx-spacing: 20;
+    -fx-padding:  0 10 0 10;
+}
+
+.right_container_fld {
+    -fx-background-color:  #FFFFFF;
+    -fx-font-size:  1.2em;
+    -fx-pref-height:  35;
+    -fx-border-radius: 5;
+}
+
+.right_container_fld_custom {
+    -fx-background-color:  #FFFFFF;
+    -fx-font-size:  1.2em;
+    -fx-pref-height:  35;
+    -fx-pref-width: 255;
+    -fx-border-radius: 5;
+}
+
+.right_container_password_fld {
+    -fx-alignment: center_left;
+    -fx-spacing: 12;
+    -fx-padding:  0 10 0 10;
+}
+
+.right_container_eye_btn {
+    -fx-cursor: hand;
+    -fx-background-color:  #EEEEEE;
+}
+
+.focused-text-input:focused {
+    -fx-border-color: linear-gradient(to bottom right, #00D6FF, #00D62F);
+    -fx-border-width: 1px;
+}
+
+.login_btn {
+    -fx-background-color:  #117A65;
+    -fx-font-size:  1.2em;
+    -fx-pref-height:  30;
+    -fx-pref-width:  110;
+    -fx-text-fill:  #FFFFFF;
+}
+
+.login_btn:hover {
+    -fx-background-color: #132A13;
+    -fx-cursor: hand;
+}
+
+.Already-btn {
+    -fx-background-color: #EEEEEE;
+    -fx-font-size: 1.2em;
+    -fx-text-fill: #1e25e8;
+}
+
+.Already-btn:hover {
+    -fx-cursor: hand;
+    -fx-underline: true;
+}
+
+.camera-button {
+    -fx-background-color: #117A65;
+    -fx-background-radius: 30;
+    -fx-text-fill: #FFFFFF;
+}
+
+.camera-button:hover {
+    -fx-background-color: #3C3D5B;
+    -fx-cursor: hand;
+}
+
+.next-btn {
+    -fx-background-color:  #117A65;
+    -fx-font-size:  1.2em;
+    -fx-pref-height:  30;
+    -fx-pref-width:  95;
+    -fx-text-fill:  #FFFFFF;
+}
+
+.next-btn:hover {
+    -fx-background-color: #132A13;
+    -fx-cursor: hand;
+}
+
+
+
+/* Create a linear gradient background
+
+.background_grad {
+    -fx-background-color:
+        linear-gradient(to bottom, #117a65, #02e0d9);
+}
+
+.horizontal-gradient {
+    -fx-background-color:
+        linear-gradient(from 0% 0% to 100% 0%, #009dc3, #02e0d9);
+}
+
+*/

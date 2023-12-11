@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.lang.String?>
+<?import javafx.scene.chart.AreaChart?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="800.0" prefWidth="900.0" stylesheets="@../../Styles/ManageServiceProvider.css"
+            xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.lsd.Controllers.Admin.DashBoardController">
+   <AnchorPane prefHeight="150.0" prefWidth="880.0" AnchorPane.bottomAnchor="640.0" AnchorPane.leftAnchor="10.0"
+               AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+      <styleClass>
+         <String fx:value="shadow"/>
+         <String fx:value="white-bg"/>
+      </styleClass>
+      <AnchorPane layoutX="27.0" layoutY="23.0" prefHeight="120.0" prefWidth="200.0" AnchorPane.bottomAnchor="10.0"
+                  AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <styleClass>
+            <String fx:value="shadow"/>
+            <String fx:value="white-bg"/>
+            <String fx:value="elevate"/>
+         </styleClass>
+         <FontAwesomeIconView glyphName="USERS" layoutX="14.0" layoutY="82.0" opacity="0.7" size="4em"/>
+         <Text fill="#096150" layoutX="79.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0"
+               text="Total Customers">
+            <font>
+               <Font size="15.0"/>
+            </font>
+         </Text>
+         <Text fill="#096150" layoutX="82.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Seekers">
+            <font>
+               <Font size="15.0"/>
+            </font>
+         </Text>
+         <Text fill="#096150" layoutX="79.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0"
+               text="Providers">
+            <font>
+               <Font size="15.0"/>
+            </font>
+         </Text>
+         <Label fx:id="seekersCount" layoutX="149.0" layoutY="61.0" text="Label" textFill="#096150">
+            <font>
+               <Font size="14.0"/>
+            </font>
+         </Label>
+         <Label fx:id="providersCount" layoutX="150.0" layoutY="90.0" text="Label" textFill="#096150">
+            <font>
+               <Font size="14.0"/>
+            </font>
+         </Label>
+         <Label fx:id="totalCustomers" layoutX="117.0" layoutY="35.0" text="Label" textFill="#096150">
+            <font>
+               <Font size="14.0"/>
+            </font>
+         </Label>
+      </AnchorPane>
+      <AnchorPane layoutX="230.0" layoutY="10.0" prefHeight="104.0" prefWidth="200.0" AnchorPane.bottomAnchor="10.0"
+                  AnchorPane.topAnchor="10.0">
+         <styleClass>
+            <String fx:value="shadow"/>
+            <String fx:value="elevate"/>
+            <String fx:value="white-bg"/>
+         </styleClass>
+         <FontAwesomeIconView fill="#2f47a4" glyphName="BUILDING" layoutX="14.0" layoutY="82.0" opacity="0.8"
+                              size="4em"/>
+         <Text fill="#096150" layoutX="91.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0"
+               text="Today's Hiring">
+            <font>
+               <Font size="15.0"/>
+            </font>
+         </Text>
+         <Label fx:id="todayHiring" layoutX="131.0" layoutY="55.0" text="Label" textFill="#096150">
+            <font>
+               <Font size="14.0"/>
+            </font>
+         </Label>
+      </AnchorPane>
+      <AnchorPane layoutX="450.0" layoutY="10.0" prefHeight="104.0" prefWidth="200.0" AnchorPane.bottomAnchor="10.0"
+                  AnchorPane.topAnchor="10.0">
+         <styleClass>
+            <String fx:value="shadow"/>
+            <String fx:value="white-bg"/>
+            <String fx:value="elevate"/>
+         </styleClass>
+         <FontAwesomeIconView fill="#32b0c6" glyphName="BRIEFCASE" layoutX="14.0" layoutY="90.0" opacity="0.8"
+                              size="4em"/>
+         <Text fill="#096150" layoutX="100.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0"
+               text="Total Hiring">
+            <font>
+               <Font size="15.0"/>
+            </font>
+         </Text>
+         <Label fx:id="totalHiring" layoutX="137.0" layoutY="54.0" text="Label" textFill="#096150">
+            <font>
+               <Font size="14.0"/>
+            </font>
+         </Label>
+      </AnchorPane>
+      <AnchorPane layoutX="666.0" layoutY="23.0" prefHeight="104.0" prefWidth="200.0" AnchorPane.bottomAnchor="10.0"
+                  AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <styleClass>
+            <String fx:value="shadow"/>
+            <String fx:value="white-bg"/>
+            <String fx:value="elevate"/>
+         </styleClass>
+         <Text fill="#096150" layoutX="100.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0"
+               text="Total Income">
+            <font>
+               <Font size="15.0"/>
+            </font>
+         </Text>
+         <FontAwesomeIconView fill="#189032" glyphName="MONEY" layoutX="14.0" layoutY="85.0" opacity="0.8"
+                              size="4em"/>
+         <Text layoutX="101.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$">
+            <font>
+               <Font size="14.0"/>
+            </font>
+         </Text>
+         <Label fx:id="totalIncome" layoutX="112.0" layoutY="56.0" prefHeight="20.0" prefWidth="84.0" text="Label"
+                textFill="#096150">
+            <font>
+               <Font size="14.0"/>
+            </font>
+         </Label>
+      </AnchorPane>
+   </AnchorPane>
+   <Separator layoutX="10.0" layoutY="172.0" prefHeight="6.0" prefWidth="864.0" AnchorPane.leftAnchor="10.0"
+              AnchorPane.rightAnchor="10.0"/>
+   <AnchorPane layoutX="293.0" layoutY="409.0" prefHeight="603.0" prefWidth="880.0" AnchorPane.bottomAnchor="10.0"
+               AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+      <styleClass>
+         <String fx:value="shadow"/>
+         <String fx:value="white-bg"/>
+      </styleClass>
+      <AnchorPane layoutX="479.0" layoutY="1.0" prefHeight="55.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0"
+                  AnchorPane.rightAnchor="0.0">
+         <styleClass>
+            <String fx:value="shadow"/>
+            <String fx:value="white-bg"/>
+            <String fx:value="top-bar"/>
+         </styleClass>
+         <Text fill="WHITE" layoutX="385.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0"
+               styleClass="profile_label" text="Data Charts">
+            <font>
+               <Font size="22.0"/>
+            </font>
+         </Text>
+         <Line layoutX="370.0" layoutY="27.0" rotate="90.0" startX="20.0" stroke="WHITE" strokeWidth="4.0"/>
+      </AnchorPane>
+      <AnchorPane layoutX="10.0" layoutY="76.0" prefHeight="250.0" prefWidth="495.0" AnchorPane.leftAnchor="10.0">
+         <styleClass>
+            <String fx:value="shadow"/>
+            <String fx:value="white-bg"/>
+         </styleClass>
+         <AreaChart fx:id="customersChart" layoutX="-33.0" layoutY="-113.0" prefHeight="287.0" prefWidth="495.0"
+                    style="-fx-cursor: hand;" styleClass="charts" title="Number of Customers"
+                    AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                    AnchorPane.topAnchor="0.0">
+            <xAxis>
+               <CategoryAxis side="BOTTOM"/>
+            </xAxis>
+            <yAxis>
+               <NumberAxis side="LEFT"/>
+            </yAxis>
+         </AreaChart>
+      </AnchorPane>
+      <AnchorPane layoutX="666.0" layoutY="72.0" prefHeight="520.0" prefWidth="355.0" AnchorPane.bottomAnchor="10.0"
+                  AnchorPane.rightAnchor="10.0">
+         <styleClass>
+            <String fx:value="shadow"/>
+            <String fx:value="white-bg"/>
+         </styleClass>
+         <BarChart fx:id="incomeChart" layoutX="-87.0" layoutY="-74.0" prefHeight="520.0" prefWidth="413.0"
+                   style="-fx-cursor: hand;" styleClass="charts" title="Income Per Day"
+                   AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                   AnchorPane.topAnchor="0.0">
+            <xAxis>
+               <CategoryAxis side="BOTTOM"/>
+            </xAxis>
+            <yAxis>
+               <NumberAxis side="LEFT"/>
+            </yAxis>
+         </BarChart>
+      </AnchorPane>
+      <AnchorPane layoutX="14.0" layoutY="396.0" prefHeight="250.0" prefWidth="495.0" AnchorPane.bottomAnchor="10.0"
+                  AnchorPane.leftAnchor="10.0">
+         <styleClass>
+            <String fx:value="shadow"/>
+            <String fx:value="white-bg"/>
+         </styleClass>
+         <LineChart fx:id="hiringChart" layoutX="-19.0" layoutY="-164.0" prefHeight="250.0" prefWidth="495.0"
+                    style="-fx-cursor: hand;" styleClass="charts" title="Hiring" AnchorPane.bottomAnchor="0.0"
+                    AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <xAxis>
+               <CategoryAxis side="BOTTOM"/>
+            </xAxis>
+            <yAxis>
+               <NumberAxis side="LEFT"/>
+            </yAxis>
+         </LineChart>
+      </AnchorPane>
+   </AnchorPane>
+</AnchorPane>

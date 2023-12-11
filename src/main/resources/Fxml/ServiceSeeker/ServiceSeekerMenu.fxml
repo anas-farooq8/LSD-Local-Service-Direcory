@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="180.0" styleClass="main_menu_container" stylesheets="@../../Styles/ServiceSeekerMenu.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lsd.Controllers.ServiceSeeker.ServiceSeekerMenuController">
+   <AnchorPane prefHeight="780.0" prefWidth="180.0" styleClass="left_container">
+      <VBox layoutY="-23.0" prefHeight="140.0" prefWidth="180.0" styleClass="title_container" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <ImageView fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@../../Images/ProximityConnect.png" />
+         </ImageView>
+         <Text fill="#096150" strokeType="OUTSIDE" strokeWidth="0.0" text="PROXIMITY CONNECT">
+            <VBox.margin>
+               <Insets top="10.0" />
+            </VBox.margin>
+         </Text>
+      </VBox>
+      <VBox layoutX="40.0" layoutY="120.0" prefHeight="400.0" prefWidth="180.0" styleClass="menu_container" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="140.0">
+         <Button fx:id="home_btn" mnemonicParsing="false" text="Home">
+            <graphic>
+               <FontAwesomeIconView glyphName="HOME" size="20" />
+            </graphic>
+            <styleClass>
+               <String fx:value="selected" />
+               <String fx:value="selected-border" />
+            </styleClass>
+         </Button>
+         <Button fx:id="booking_btn" mnemonicParsing="false" styleClass="selected" text="Booking">
+            <graphic>
+               <FontAwesomeIconView glyphName="HANDSHAKE_ALT" size="20" />
+            </graphic>
+         </Button>
+         <Button fx:id="account_btn" mnemonicParsing="false" styleClass="selected" text="Account">
+            <graphic>
+               <FontAwesomeIconView glyphName="CREDIT_CARD" size="20" />
+            </graphic>
+         </Button>
+         <Line endX="120.0" />
+         <Button fx:id="profile_btn" mnemonicParsing="false" text="Profile">
+            <graphic>
+               <FontAwesomeIconView glyphName="GEARS" size="20" />
+            </graphic>
+            <styleClass>
+               <String fx:value="alt_menu_btn" />
+               <String fx:value="selected" />
+            </styleClass>
+         </Button>
+         <Button fx:id="logout_btn" mnemonicParsing="false" text="Logout">
+            <graphic>
+               <FontAwesomeIconView glyphName="EXTERNAL_LINK" size="20" />
+            </graphic>
+            <styleClass>
+               <String fx:value="alt_menu_btn" />
+               <String fx:value="selected" />
+            </styleClass>
+         </Button>
+      </VBox>
+      <VBox prefHeight="120.0" prefWidth="180.0" styleClass="report_container" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0">
+         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Add Suggestions!" />
+         <Label text="Add Suggestions to the Admin." />
+         <Button fx:id="suggestions_btn" mnemonicParsing="false" styleClass="selected" text="Add">
+            <graphic>
+               <FontAwesomeIconView glyphName="COMMENTING" size="12" />
+            </graphic>
+         </Button>
+      </VBox>
+   </AnchorPane>
+</VBox>
