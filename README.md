@@ -8,12 +8,15 @@
 * Create a new folder named "IntellijProjects/LSD" in the D: drive.
 * Paste all the project files into this folder.
 * Open "D:\IntellijProjects\LSD\Mysql\Database.sql" and execute the provided SQL script to create the necessary schema and perform insertions.
-   ![LSD Database Schema](https://github.com/anas-farooq8/LSD/assets/150327092/341e85cd-20bd-4bd5-8185-ba4f5c34f9ce)
+![LSD_Database](https://github.com/anas-farooq8/LSD/assets/150327092/907f27c5-fe97-48cd-baa5-3d3a2da4f3e9)
 * Open the project in IntelliJ IDEA.
 * All dependencies will be resolved automatically.
+* Update the username and password in this function in(D:\IntellijProjects\LSD\src\main\java\com\example\lsd\DBUtils\DBUtils.java)
+![Screenshot 2023-12-06 225853](https://github.com/anas-farooq8/LSD/assets/150327092/2b1ddfd8-187b-40c8-8e1b-27f23353d5d9)
 * Add the Run/Debug Configuration.
-   ![Run Configuration](https://github.com/anas-farooq8/LSD/assets/150327092/ead2b97d-77cf-4f22-8ba1-7df17dc00750)
+![Screenshot (5)](https://github.com/anas-farooq8/LSD/assets/150327092/e2a54fdb-6099-4914-a56f-87fd18ba8594)
 * Run the application and enjoy!
+
 
 
 
@@ -21,63 +24,60 @@
 
 ## Admin Side
 * Login Window (There is only one Admin).
- 
-![Screenshot 2023-12-11 180114](https://github.com/anas-farooq8/LSD/assets/150327092/9c00f6ae-f273-4baf-88d8-c8572035c600)
+![Screenshot 2023-12-11 180114](https://github.com/anas-farooq8/LSD/assets/150327092/df8600a1-ef01-47db-9726-46a86d20ca89)
 
 * DashBoard View.
-![1](https://github.com/anas-farooq8/LSD/assets/150327092/8120c572-5789-490f-b1e6-d64646b585bc)
+![1](https://github.com/anas-farooq8/LSD/assets/150327092/de374fbb-5671-4ccf-a2b7-897b1352533a)
 
 * Manage Service Providers View.
-![2](https://github.com/anas-farooq8/LSD/assets/150327092/3487862a-a37c-4bcd-94db-2ad31f9a12d1)
+![2](https://github.com/anas-farooq8/LSD/assets/150327092/f090b427-03ca-4346-bd0f-98ab4c433bb6)
 
 * Service Provider Profile View.
-![Screenshot 2023-12-11 181049](https://github.com/anas-farooq8/LSD/assets/150327092/de5ad663-bd0d-42be-8443-047c2306b28b)
+![Screenshot 2023-12-11 181049](https://github.com/anas-farooq8/LSD/assets/150327092/d5e91aca-ed0e-4edf-b806-a39ab8ab9ae2)
 
 * Bookings View.
-![3](https://github.com/anas-farooq8/LSD/assets/150327092/716678e6-87ad-4efb-a734-bfa25d3aa8fb)
+![3](https://github.com/anas-farooq8/LSD/assets/150327092/07e13bf0-263a-44eb-8d63-fd0ea69329d6)
 
 * View Booking.
-![4](https://github.com/anas-farooq8/LSD/assets/150327092/e6553109-fd01-4b49-8f02-758f04b01de0)
+![4](https://github.com/anas-farooq8/LSD/assets/150327092/3d6e1c2c-e101-4021-a18b-e0df616b7ef5)
 
 * Suggestions View.
-![5](https://github.com/anas-farooq8/LSD/assets/150327092/6336611a-0cc7-4c77-9eb0-b568906ebd7c)
+![5](https://github.com/anas-farooq8/LSD/assets/150327092/dc08a6af-6551-4edd-a207-700f6a9fa0dd)
 
 
 ## Client Side
 * Login Window.
-  
-![Screenshot 2023-12-11 181425](https://github.com/anas-farooq8/LSD/assets/150327092/3046a761-340a-4cf4-aa3f-aca944ce44d6)
+![Screenshot 2023-12-11 181425](https://github.com/anas-farooq8/LSD/assets/150327092/98def573-65cf-420d-aaa9-d946cf186e54)
 
 * Home View.
-![1](https://github.com/anas-farooq8/LSD/assets/150327092/4af861a9-bbf6-4acd-99b4-930a35401e81)
+![1](https://github.com/anas-farooq8/LSD/assets/150327092/a23d0808-2ea4-4760-a6d5-9859d4b82a82)
 
 * Search Bar.
-![2](https://github.com/anas-farooq8/LSD/assets/150327092/4bda2658-d500-4dce-be76-cb9872f4ff98)
+![2](https://github.com/anas-farooq8/LSD/assets/150327092/4bdba949-fd44-46a2-a334-4b0508e3e8de)
 
 * Service Provider Profile View.
-![3](https://github.com/anas-farooq8/LSD/assets/150327092/39d09f70-3dc5-4fcf-87a7-377f1b93be56)
+![3](https://github.com/anas-farooq8/LSD/assets/150327092/9ea3af54-e08a-43eb-b704-9d53aa73a5f6)
 
 * Hiring View.
-![4](https://github.com/anas-farooq8/LSD/assets/150327092/f7a4e30d-1948-4c35-9470-fd1be6f0907f)
+![4](https://github.com/anas-farooq8/LSD/assets/150327092/d08ae7f3-49f8-44b4-9bae-293e9f03b7c4)
 
 * Bookings View.
-![5](https://github.com/anas-farooq8/LSD/assets/150327092/12201c68-9744-45dd-8f6e-02779f9b32c7)
+![5](https://github.com/anas-farooq8/LSD/assets/150327092/1735c2e7-1ca8-4ead-ad6e-8f9b21ad9989)
 
 * Rating View.
-![Screenshot 2023-12-11 181912](https://github.com/anas-farooq8/LSD/assets/150327092/5f143c5f-12b9-45d7-9b21-4e6548b03e7f)
+![Screenshot 2023-12-11 181912](https://github.com/anas-farooq8/LSD/assets/150327092/5acc903d-65fd-4120-82d8-f96d36a6f6b0)
 
 * Account View.
-![6](https://github.com/anas-farooq8/LSD/assets/150327092/aa10db63-de6f-44fc-9ce2-3ac2d95a0ce7)
+![6](https://github.com/anas-farooq8/LSD/assets/150327092/3c81d97f-ab13-4b93-ade8-9e8bdb20390f)
 
 * Profile View.
-![7](https://github.com/anas-farooq8/LSD/assets/150327092/7a6df68b-4245-4f0a-9f51-0b1f81645091)
+![7](https://github.com/anas-farooq8/LSD/assets/150327092/405a7c9e-c7da-478d-bf34-2c3663070807)
 
 * Change Password View.
-![8](https://github.com/anas-farooq8/LSD/assets/150327092/e9f5f1be-01c9-4489-9b41-a2d1554bdf3f)
+![8](https://github.com/anas-farooq8/LSD/assets/150327092/8fe707e3-71b0-4d39-bcfe-3b1edd6f2d05)
 
 * Add Suggestion View.
-![9](https://github.com/anas-farooq8/LSD/assets/150327092/47bbefd3-3b63-4e42-89fa-3f56f0027fe6)
+![9](https://github.com/anas-farooq8/LSD/assets/150327092/74fbb0be-b7bc-4b2a-8c3d-b7acfc0b340a)
 
 * Logout.
-![10](https://github.com/anas-farooq8/LSD/assets/150327092/6c39ce75-6e9b-41bd-bf96-2da3f69b7d42)
-
+![10](https://github.com/anas-farooq8/LSD/assets/150327092/81df69d9-f051-42f1-94d6-81eb1bc5424f)
